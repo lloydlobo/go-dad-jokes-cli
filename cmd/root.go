@@ -5,8 +5,8 @@ Copyright © 2022 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"github.com/spf13/cobra"
 	"os"
+	"github.com/spf13/cobra"
 )
 
 // rootCmd represents the base command when called without any subcommands
@@ -29,5 +29,4 @@ func Execute() {
 func init() {
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
-
 // Code/Source/cmd/root.go ends here

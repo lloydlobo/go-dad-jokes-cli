@@ -13,9 +13,6 @@ import (
 
 func main() {
 	cmd.Execute()
-
-	// Testing fmt import after cmd is executed.
-	// fmt.Println("fmt.Println: dadjoke")
 }
 
 // Code/Source/main.go ends here

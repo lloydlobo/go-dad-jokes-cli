@@ -9,6 +9,9 @@
 - [[#code][Code]]
   - [[#source][Source]]
   - [[#docs][Docs]]
+  - [[#compile-binary-cli][Compile binary CLI]]
+  - [[#execute-local-binary][Execute local binary]]
+  - [[#install][Install]]
 - [[#-1][....]]
 - [[#references][References]]
   - [[#blog][Blog]]
@@ -29,16 +32,14 @@ Copyright
 package main
 
 import (
-	"fmt"
+	// "fmt"
 	"github.com/lloydlobo/godadjoke/cmd"
 )
 
 func main() {
 	cmd.Execute()
-
-	// Testing fmt import after cmd is executed.
-	fmt.Println("fmt.Println: dadjoke")
 }
+
 #+end_src
 *** cmd
 **** root.go
@@ -158,6 +159,28 @@ https://pkg.go.dev/net/http#Get
 - To make a request with custom headers, use NewRequest and DefaultClient.Do.
 - To make a request with a specified context.Context, use NewRequestWithContext and DefaultClient.Do.
 */
+** Compile binary CLI
+#+begin_example sh
+go build
+go list -f '{{.Target}}'
+
+# /home/user/go/bin/godadjoke
+#+end_example
+
+** Execute local binary
+Pass the random `--flag`
+
+#+begin_example sh
+./godadjoke random
+#+end_example
+
+** Install
+#+begin_example sh
+ # Install the binary to the target dir
+ $ go install
+ # Run the appliccation (binary) from anywhere
+ $ godadjoke random
+#+end_example
 
 
 * ....
