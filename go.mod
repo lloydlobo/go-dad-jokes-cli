@@ -1,4 +1,4 @@
-module github.com/lloydlobo/go-dad-jokes-cli
+module github.com/lloydlobo/godadjoke
 
 go 1.19
 

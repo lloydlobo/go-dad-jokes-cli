@@ -1,0 +1,4 @@
+* Init go mod <pkg-name>
+* Init cobra mod <pkg-name>
+* Change cmd/*.go description to suit the project
+
