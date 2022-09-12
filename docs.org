@@ -2,3 +2,7 @@
 * Init cobra mod <pkg-name>
 * Change cmd/*.go description to suit the project
 
+* References
+** Tutorial
+*** URL: https://www.youtube.com/watch?v=-tO7zSv80UY&t=247s
+
