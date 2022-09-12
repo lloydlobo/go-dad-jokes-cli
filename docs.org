@@ -148,6 +148,18 @@ $ curl -H "Accept: application/json" https://icanhazdadjoke.com/
 }
 #+end_example
 
+*** Imports: net/http package
+After adding the getRandomJoke() import `net/http` package to use func Get
+
+/* Search fo func Get in the doc
+https://pkg.go.dev/net/http
+https://pkg.go.dev/net/http#Get
+*** Get is a wrapper around DefaultClient.Get.
+- To make a request with custom headers, use NewRequest and DefaultClient.Do.
+- To make a request with a specified context.Context, use NewRequestWithContext and DefaultClient.Do.
+*/
+
+
 * ....
 
 * References
